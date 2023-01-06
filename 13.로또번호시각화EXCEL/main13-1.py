@@ -1,10 +1,9 @@
 ################오류################
 ########파일xl을 못찾는거 같은데 ###
 # ######zip파일??? 다시찾아보기 ####
-
 import pandas as pd
 
-file_path = r'13.로또번호시각화_EXCEL\lotto.xls'
+file_path = r'13.로또번호시각화EXCEL\excel.xlsx'
 df_from_excel = pd.read_excel(file_path,engine='openpyxl') #엔진은 openpyxl을 사용하여 판다스의 데이터프레임으로 엑셀을 불러옵니다.
 
 df_from_excel = df_from_excel.drop(index=[0,1]) #0,1번 줄을 삭제합니다.
